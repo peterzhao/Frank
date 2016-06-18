@@ -26,6 +26,7 @@ module Frank
       end
 
       def self.load_translations
+        I18n.enforce_available_locales = false
         if I18n.backend.send(:translations).size == 0
           I18n.locale = self.system_locale
           I18n.load_path = [ File.join(File.dirname(__FILE__), 'localize.yml') ]
