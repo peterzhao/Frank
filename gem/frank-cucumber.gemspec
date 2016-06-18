@@ -33,5 +33,4 @@ Gem::Specification.new do |s|
   s.add_development_dependency( "rr" )
   s.add_development_dependency( "yard" )
   s.add_development_dependency( "pry" )
-  s.add_development_dependency( "pry-debugger" )
 end
